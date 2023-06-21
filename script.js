@@ -63,3 +63,5 @@ criancas = 1;
 horas = 5;
 
 console.log(carne(), cerveja(), agua());
+
+/* Teste bem sucessido, agora é necessário fazer a integração no DOM */
