@@ -17,7 +17,7 @@ const horas = document.querySelector('.hours');
 // Total de Pessoas:
 
 let pessoas = () => {
-    return adultos.value + Math.round(criancas.value / 2);
+    return parseFloat(adultos.value) + parseFloat(criancas.value / 2);
 };
 
 // Total de horas
@@ -42,9 +42,9 @@ let carne = () => {
 
 let cerveja = () => {
     if (!maisDeSeisHoras()) {
-        return pessoas() * 1200;
+        return parseFloat(adultos.value) * 1200;
     } else {
-        return pessoas() * 2000;
+        return parseFloat(adultos.value) * 2000;
     }
 };
 
@@ -69,9 +69,9 @@ horas = 5; */
 const calcBtn = document.querySelector('.calc-btn');
 
 calcBtn.addEventListener('click', () => {
-    return console.log(carne(), cerveja(), agua())
+    return console.log(carne(), cerveja(), agua(), pessoas())
 });
 
-// Botão funcionando perfeitamente.
+
 
 
