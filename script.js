@@ -10,20 +10,20 @@
 
 // Variáveis declaradas por input.
 
-let adultos;
-let criancas;
-let horas;
+const adultos = document.querySelector('.adults');
+const criancas = document.querySelector('.children');
+const horas = document.querySelector('.hours');
 
 // Total de Pessoas:
 
 let pessoas = () => {
-    return adultos + Math.round(criancas / 2);
+    return adultos.value + Math.round(criancas.value / 2);
 };
 
 // Total de horas
 
 let maisDeSeisHoras = () => {
-    if (horas < 6) {
+    if (horas.value < 6) {
         return false
     } else {
         return true
@@ -58,10 +58,20 @@ let agua = () => {
 
 /* Testes */
 
-adultos = 1;
+/* adultos = 1;
 criancas = 1;
-horas = 5;
+horas = 5; */
 
-console.log(carne(), cerveja(), agua());
+/* console.log(carne(), cerveja(), agua()); */
 
 /* Teste bem sucessido, agora é necessário fazer a integração no DOM */
+
+const calcBtn = document.querySelector('.calc-btn');
+
+calcBtn.addEventListener('click', () => {
+    return console.log(carne(), cerveja(), agua())
+});
+
+// Botão funcionando perfeitamente.
+
+
