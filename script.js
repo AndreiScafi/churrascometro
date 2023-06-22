@@ -95,6 +95,51 @@ calcBtn.addEventListener('click', () => {
 `
 });
 
+/* Criar animação de termômetro subindo com os icones do font Awesome */
+
+/* Tags dos icones - em sequência:
+
+1 - <i class="fa-solid fa-temperature-empty"></i>
+
+2 - <i class="fa-solid fa-temperature-quarter"></i>
+
+3 - <i class="fa-solid fa-temperature-half"></i>
+
+4 - <i class="fa-solid fa-temperature-three-quarters"></i>
+
+5 - <i class="fa-solid fa-temperature-full"></i>
+
+*/
+
+const temperatureIcon = document.querySelector('.temperature');
+
+function temperatureAnimation() {
+    setTimeout(() => {
+        temperatureIcon.innerHTML = `<i class="fa-solid fa-temperature-quarter">`
+    }, 300);
+
+    setTimeout(() => {
+        temperatureIcon.innerHTML = `<i class="fa-solid fa-temperature-half">`
+    }, 600);
+
+    setTimeout(() => {
+        temperatureIcon.innerHTML = `<i class="fa-solid fa-temperature-three-quarters">`
+    }, 900);
+
+    setTimeout(() => {
+        temperatureIcon.innerHTML = `<i class="fa-solid fa-temperature-full">`
+    }, 1200);
+
+    setTimeout(() => {
+        temperatureIcon.innerHTML = `<i class="fa-solid fa-temperature-empty">`
+    }, 2000);
+}
+
+temperatureAnimation();
+
+setInterval(() => {
+    temperatureAnimation();
+}, 2000);
 
 
 
