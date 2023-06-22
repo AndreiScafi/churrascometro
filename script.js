@@ -34,25 +34,25 @@ let maisDeSeisHoras = () => {
 
 let carne = () => {
     if (!maisDeSeisHoras()) {
-        return pessoas() * 400;
+        return pessoas() * 0.4;
     } else {
-        return pessoas() * 650;
+        return pessoas() * 0.65;
     }
 };
 
 let cerveja = () => {
     if (!maisDeSeisHoras()) {
-        return parseFloat(adultos.value) * 1200;
+        return parseFloat(adultos.value) * 1.2;
     } else {
-        return parseFloat(adultos.value) * 2000;
+        return parseFloat(adultos.value) * 2;
     }
 };
 
 let agua = () => {
     if (!maisDeSeisHoras()) {
-        return pessoas() * 1000;
+        return pessoas() * 1;
     } else {
-        return pessoas() * 1500;
+        return pessoas() * 1.5;
     }
 };
 
@@ -66,9 +66,25 @@ horas = 5; */
 
 /* Teste bem sucessido, agora é necessário fazer a integração no DOM */
 
+const output = document.querySelector('.output')
 const calcBtn = document.querySelector('.calc-btn');
 
 calcBtn.addEventListener('click', () => {
+
+    output.innerHTML = `   
+    <div class="output-item">
+    <i class="fa-solid fa-drumstick-bite"></i>
+    <p class="section-1-paragraph">Você precisará de ${carne().toFixed(3)}kg de carne.</p>
+</div>
+<div class="output-item">
+    <i class="fa-solid fa-beer-mug-empty"></i>
+    <p class="section-1-paragraph">Você precisará de ${cerveja().toFixed(3)} litros de cerveja.</p>
+</div>
+<div class="output-item">
+    <i class="fa-solid fa-bottle-water"></i>
+    <p class="section-1-paragraph">Você precisará de ${agua().toFixed(3)} litros de água/refrigerante.</p>
+</div>
+`
     return console.log(carne(), cerveja(), agua(), pessoas())
 });
 
