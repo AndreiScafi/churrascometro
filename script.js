@@ -40,6 +40,14 @@ let carne = () => {
     }
 };
 
+let paoDeAlho = () => {
+    if (!maisDeSeisHoras()) {
+        return pessoas() * 150;
+    } else {
+        return pessoas() * 250;
+    }
+}
+
 let cerveja = () => {
     if (!maisDeSeisHoras()) {
         return parseFloat(adultos.value) * 1.2;
@@ -77,15 +85,18 @@ calcBtn.addEventListener('click', () => {
     <p class="section-1-paragraph">Você precisará de ${carne().toFixed(3)}kg de carne.</p>
 </div>
 <div class="output-item">
+<i class="fa-solid fa-bread-slice"></i>
+<p class="section-1-paragraph">Você precisará de ${paoDeAlho()}g de pão de alho.</p>
+</div>
+<div class="output-item">
     <i class="fa-solid fa-beer-mug-empty"></i>
-    <p class="section-1-paragraph">Você precisará de ${cerveja().toFixed(3)} litros de cerveja.</p>
+    <p class="section-1-paragraph">Você precisará de ${cerveja().toFixed(1)} litros de cerveja.</p>
 </div>
 <div class="output-item">
     <i class="fa-solid fa-bottle-water"></i>
-    <p class="section-1-paragraph">Você precisará de ${agua().toFixed(3)} litros de água/refrigerante.</p>
+    <p class="section-1-paragraph">Você precisará de ${agua().toFixed(1)} litros de água/refrigerante.</p>
 </div>
 `
-    return console.log(carne(), cerveja(), agua(), pessoas())
 });
 
 
