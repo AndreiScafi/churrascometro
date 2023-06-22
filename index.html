@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Churrascometro</title>
 </head>
 
@@ -12,17 +16,32 @@
     <!-- 1 Seção -->
     <div class="container">
         <section class="section-1">
+            <h1 class="heading">Churrascometro!</h1>
             <div class="card">
-                <h1 class="card-heading">Churrascometro</h1>
+                <h3 class="card-heading">Informe o número de participantes e a duração do churrasco.</h3>
                 <form action="" class="card-form">
                     <label for="adults">Adultos</label>
-                    <input type="number" class="adults" name="adults" min="1" max="99">
+                    <input type="number" class="adults" name="adults" min="1" max="99" value="1">
                     <label for="children">Crianças</label>
-                    <input type="number" class="children" name="children" min="0" max="99">
+                    <input type="number" class="children" name="children" min="0" max="99" value="0">
                     <label for="hours">Duração/Horas</label>
-                    <input type="number" class="hours" name="hours" min="1" max="12">
+                    <input type="number" class="hours" name="hours" min="1" max="12" value="1">
                 </form>
                 <input type="submit" value="Calcular" class="calc-btn">
+                <div class="output">
+                    <div class="output-item">
+                        <i class="fa-solid fa-drumstick-bite"></i>
+                        <p class="section-1-paragraph">Você precisará de Xkg de carne.</p>
+                    </div>
+                    <div class="output-item">
+                        <i class="fa-solid fa-beer-mug-empty"></i>
+                        <p class="section-1-paragraph">Você precisará de XL de cerveja.</p>
+                    </div>
+                    <div class="output-item">
+                        <i class="fa-solid fa-bottle-water"></i>
+                        <p class="section-1-paragraph">Você precisará de XL de água/refrigerante.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
