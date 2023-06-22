@@ -81,21 +81,17 @@ calcBtn.addEventListener('click', () => {
 
     output.innerHTML = `   
     <div class="output-item">
-    <i class="fa-solid fa-drumstick-bite"></i>
-    <p class="section-1-paragraph">Você precisará de ${carne().toFixed(3)}kg de carne.</p>
-</div>
-<div class="output-item">
-<i class="fa-solid fa-bread-slice"></i>
-<p class="section-1-paragraph">Você precisará de ${paoDeAlho()}g de pão de alho.</p>
-</div>
-<div class="output-item">
-    <i class="fa-solid fa-beer-mug-empty"></i>
-    <p class="section-1-paragraph">Você precisará de ${cerveja().toFixed(1)} litros de cerveja.</p>
-</div>
-<div class="output-item">
-    <i class="fa-solid fa-bottle-water"></i>
-    <p class="section-1-paragraph">Você precisará de ${agua().toFixed(1)} litros de água/refrigerante.</p>
-</div>
+       <p class="section-1-paragraph">   <span><i class="fa-solid fa-drumstick-bite"></i></span> Você precisará de ${carne().toFixed(3)}kg de carne.</p>
+    </div>
+    <div class="output-item">
+       <p class="section-1-paragraph"><span><i class="fa-solid fa-bread-slice"></i> </span> Você precisará de ${paoDeAlho()}g de pão de alho.</p>
+    </div>
+    <div class="output-item">
+       <p class="section-1-paragraph"><span> <i class="fa-solid fa-beer-mug-empty"></i> </span> Você precisará de ${cerveja().toFixed(1)} litros de cerveja.</p>
+    </div>
+    <div class="output-item">
+       <p class="section-1-paragraph"> <span><i class="fa-solid fa-bottle-water"></i></span> Você precisará de ${agua().toFixed(1)} litros de água/refrigerante.</p>
+    </div>
 `
 });
 

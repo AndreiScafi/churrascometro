@@ -15,21 +15,28 @@
 <body>
     <!-- 1 Seção -->
     <div class="container">
+        <div class="banner">
+            <h1 class="banner-heading">Churrascometro <span><i class="fa-solid fa-temperature-high"></i></span></h1>
+        </div>
         <section class="section-1">
-            <h1 class="heading">Churrascometro!</h1>
             <div class="card">
                 <h3 class="card-heading">Informe o número de participantes e a duração do churrasco.</h3>
                 <form action="" class="card-form">
-                    <label for="adults">Adultos</label>
-                    <input type="number" class="adults" name="adults" min="1" max="99" value="1">
-                    <label for="children">Crianças</label>
-                    <input type="number" class="children" name="children" min="0" max="99" value="0">
-                    <label for="hours">Duração/Horas</label>
-                    <input type="number" class="hours" name="hours" min="1" max="12" value="1">
+                    <div class="card-form-item">
+                        <label for="adults"><span><i class="fa-solid fa-person"></i></span> Adultos</label>
+                        <input type="number" class="adults" name="adults" min="1" max="99" value="1">
+                    </div>
+                    <div class="card-form-item">
+                        <label for="children"><span><i class="fa-solid fa-child"></i></span> Crianças</label>
+                        <input type="number" class="children" name="children" min="0" max="99" value="0">
+                    </div>
+                    <div class="card-form-item">
+                        <label for="hours"><span><i class="fa-solid fa-clock"></i></span> Duração/Horas</label>
+                        <input type="number" class="hours" name="hours" min="1" max="12" value="1">
+                    </div>
                 </form>
                 <input type="submit" value="Calcular" class="calc-btn">
                 <div class="output">
-
                 </div>
             </div>
         </section>
