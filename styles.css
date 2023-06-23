@@ -8,6 +8,14 @@
 html {
     font-size: 62.5%;
     font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/Fogo-da-Churrasqueira-1.webp);
+    background-size: cover;
 }
 
 /* End of Common Styles */
@@ -16,7 +24,7 @@ html {
 .banner {
     width: 100%;
     height: 20vh;
-    background-color: #000;
+    /* background-color: #000; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +36,7 @@ html {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    text-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.7);
+    text-shadow: 0.2rem 0.2rem 0.3rem rgba(255, 255, 255, 0.5);
 }
 
 .banner-heading span {
@@ -37,3 +45,87 @@ html {
 }
 
 /* End of Banner Style */
+
+/* Section 1 */
+.section-1 {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    border-radius: 2rem;
+}
+
+.card-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 5rem;
+}
+
+.card-form {
+    width: 40%;
+    height: 25%;
+}
+
+.card-form-item {
+    font-size: 2.5rem;
+    font-family: 900;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.card-form-item span {
+    color: #b31c1c;
+    font-size: 3rem;
+}
+
+.card-form-item input {
+    height: 2rem;
+    width: 5rem;
+    border: none;
+    background-color: transparent;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.calc-btn {
+    width: 30%;
+    background-color: #b31c1c;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+}
+
+.output {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: right;
+    padding: 2rem 5rem;
+    font-size: 2.5rem;
+    letter-spacing: .1rem;
+}
+
+.output span {
+    color: #b31c1c;
+    font-size: 3rem;
+}
+
+/* End of Section 1 */
